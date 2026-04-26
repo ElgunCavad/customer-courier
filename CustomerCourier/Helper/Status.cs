@@ -4,11 +4,10 @@ using System.Text;
 
 namespace CustomerCourier.Helper
 {
-        internal enum Status
-        {
-            Created,
-            InTransit,
-            Delivered
-        }
+    internal enum Status
+    {
+        Created,
+        InTransit,
+        Delivered
     }
 }

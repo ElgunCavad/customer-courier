@@ -16,5 +16,16 @@ namespace CustomerCourier.Models
 
         public int DeliveredCount { get; private set; }
 
+        public Courier(string fullName)
+        {
+            Id = ++_id;
+            FullName = fullName;
+        }
+
+        public void IncrementDelivered()
+        {
+            DeliveredCount++;
+        }
+
     }
 }
