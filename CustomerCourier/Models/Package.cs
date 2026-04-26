@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using System.Text;
+using CustomerCourier.Helper;
 
 namespace CustomerCourier.Models
 {
@@ -21,5 +22,10 @@ namespace CustomerCourier.Models
         public Status Status { get; set; }
 
         public Courier? Courier { get; set; }
+
+        public Package()
+        {
+            Status = Status.Created;
+        }
     }
 }
